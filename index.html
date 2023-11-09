@@ -14,53 +14,72 @@
   <!-- Dopo BOOSTRAP collego il mio foglio di stile (NON PRIMA DI BOOTSTRAP!)-->
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<header>
-  <div class="container-fluid bg-dark">
-    <div class="row">
-      <div class="col">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Chi siamo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contatti</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Servizi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">W.I.P.</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
+
 <body>
+          <header>
+            <div class="container-fluid bg-dark">
+              <div class="row">
+                <div class="col  ">
+                  <nav class="navbar navbar-expand-lg">
+                      <img src="./img/logos.jpg" height="50" width="50" alt="Security logo">
+                      <a class="navbar-brand text-white ms-2" href="#">Security</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Servizi</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contatti</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Chi siamo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled text-light">W.I.P.</a>
+                          </li>
+                        </ul>
+                      </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </header>
 
-  <!-- QUI POTETE INIZIARE IL VOSTRO ESERCIZIO! -->
-  <div class="container">
-    <div class="row justify-content-center mt-4">
-      <div class="col-12">
-        <div class="card">
-          <img src="./img/logo.png" class="card-img-top" height="400" width="300" alt="Password generator logo">
-          <div class="card-body">
-            <h5 class="card-title text-center">SCEGLI LA TUA PASSWORD SUPERSICURA</h5>
-            <p class="card-text text-center">Affidati ai nostri servizi per proteggere i tuoi dati!</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li id="password1" class="list-group-item"></li>
-            <li id="password2" class="list-group-item"></li>
-            <li id="password3" class="list-group-item"></li>
-          </ul>
-          <div class="card-body">
-            <a href="" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="false">Cambia dati!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+            <main>
+              <div class="container">
+                <div class="row justify-content-center mt-4">
+                  <div class="col-12">
+                    <div class="card mb-5">
+                      <img src="./img/logo.png" class="card-img-top" height="400" width="300" alt="Password generator logo">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">SCEGLI LA TUA PASSWORD SUPERSICURA</h5>
+                        <p class="card-text text-center">Affidati ai nostri servizi per proteggere i tuoi dati!</p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li id="password1" class="list-group-item"></li>
+                        <li id="password2" class="list-group-item"></li>
+                        <li id="password3" class="list-group-item"></li>
+                      </ul>
+                      <div class="card-body">
+                        <a href="" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="false">Cambia dati!</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+            
+            <footer class="footer mt-3 py-3 bg-dark">
+                <div class="container-fluid">
+                  <div class="row text-center">
+                    <p class="text-secondary">Copyright &copy; By Salvatore Montella</p>
+                    <p class="text-secondary">Qeusto sito non è assolutamente uno SCAM</p>
+                  </div>
+                </div>
+            </footer>
 
   <!-- importazione MIO file di script -->
   <script src="./js/main.js"></script>
